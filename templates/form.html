@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{%block content%}
+
+<div class="jumbotron">
+   <div class="alert alert-danger" role="alert">*** Enter 1 for True 0 for False ***</div>
+<form action="{{ url_for('predict') }}" method="POST">
+
+<div class="form-group class="mt-5">
+    <label for="">Total Rooms</label>
+    <input type="number" step="any" class="form-control" name="rooms" id="" name="rooms" placeholder="">
+    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+</div>
+
+<div class="form-group">
+    <label for="">Total rooms area</label>
+    <input type="number" step="any" class="form-control" name="area" id="" placeholder="">
+</div>
+  
+<div class="form-group">
+    <label class="" for="">No of Swimming pools</label>
+    <input type="number" step="any" name="pool" class="form-control" id="">
+    
+</div>
+    
+<div class="form-group">
+  <label class="" for="">Total Area of swimming pools</label>
+  <input type="number" step="any" name="posize" class="form-control" id="">
+  
+</div>
+<div class="form-group">
+    <label class="" for="">Rodeside</label>
+    <input type="text" step="any" name="rodeside"
+    
+    class="form-control" id="">
+    
+</div>
+
+<div class="form-group">
+  <label class="" for="">Avg households</label>
+  <input type="number" step="any"  name="houseavg"  class="form-control" id="">
+  
+</div>
+
+<div class="form-group">
+    <label class="" for="">Educated Area</label>
+    <input type="number" step="any" name="edu"
+    class="form-control" id="">
+    
+</div>
+
+<div class="form-group">
+  <label class="" for="">Electricity</label>
+  <input type="number" step="any" name="electcity"
+  class="form-control" id="">
+  
+</div>
+
+<div class="form-group">
+    <label class="" for="">Bore water</label>
+    <input type="number" step="any" name="borwat"
+    class="form-control" id="">
+    
+  </div>
+
+<div class="form-group">
+  <label class="" for="">Drinking water</label>
+  <input type="number" step="any"  name="drinkwat"
+  class="form-control" id="">
+  
+</div>
+<div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+</div>
+</form>
+
+</div>
+{% endblock content %}

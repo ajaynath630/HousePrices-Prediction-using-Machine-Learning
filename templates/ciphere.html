@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{%block content%}
+
+<div class="jumbotron">
+    <div class="alert alert-danger" role="alert">***Encrpytion***</div>
+    <form action="{{ url_for('encrypt') }}" method="POST" >
+        <div class="form-group">
+            <label for="">Enter String</label>
+
+            <input type="text" class="form-control" name="string" id="" placeholder="">
+           
+            <label for="">Enter Key</label>
+            <input type="number" step="any" class="form-control" name="key" id="" placeholder="">
+
+            
+        </div>
+        <div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<div></div>
+
+<div class="jumbotron">
+    <div class="alert alert-danger" role="alert">***Decryption***</div>
+    <form action="{{ url_for('decrypt') }}" method="POST" >
+        <div class="form-group">
+            
+            <label for="">Enter String </label>
+            <input type="text" class="form-control" name="string" id="" placeholder="">
+
+
+            <label for="">Key</label>
+            <input type="number" step="any" class="form-control" name="key" id="" placeholder="">
+        </div>
+        <div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+{% endblock content %}

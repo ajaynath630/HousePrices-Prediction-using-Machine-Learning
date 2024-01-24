@@ -1,0 +1,12 @@
+h1 {
+    border:52px solid white;
+       
+     /* text-align: right;  */
+     /* align-items: center;  */
+    color:blue;
+    margin-bottom: 50px;
+}
+
+body {
+    background-image: -webkit-linear-gradient(0deg,rgba(60) 30%,rgba() 70%,rgba() 100%);
+}

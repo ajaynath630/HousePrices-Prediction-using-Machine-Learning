@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{%block content%}
+
+<div class="container mb-5">
+<table class="table-bordered table-dark">
+{%for k,v in dic.items()%}
+ <tr>
+ <td>{{k}}</td>
+ <td>{{v}}</td>
+ 
+ </tr>
+{% endfor %}
+<tr><td>{{value}}</td></tr>
+</table>
+</div>
+
+{% endblock content %}
